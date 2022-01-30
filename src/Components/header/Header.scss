@@ -1,0 +1,27 @@
+@import "../base/base";
+.header {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  height: $header-h;
+  width: $header-w;
+  background-color: rgba(54, 28, 71, 0.9);
+}
+.index {
+  color: aqua;
+  position: absolute;
+  left: 20%;
+  top: 15px;
+  font-size: 30px;
+}
+.serach {
+  position: absolute;
+  left: 28%;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 8px;
+}

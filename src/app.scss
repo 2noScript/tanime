@@ -1,0 +1,43 @@
+@import "./Components/base/base";
+body {
+  background-color: rgb(34, 34, 34);
+  overflow: hidden overlay;
+  // overflow-y: hidden;
+  will-change: scroll-position;
+  scroll-behavior: smooth;
+  overflow-anchor: none !important;
+  scroll-snap-stop: normal !important;
+  overscroll-behavior: unset !important;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  z-index: 999;
+  background-color: blue;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.app {
+  position: relative;
+  width: 100%;
+
+  background-color: red;
+}
+.container {
+  margin-top: $header-h;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+  // background-color: rgb(34, 34, 34);
+}
+a {
+  text-decoration: none;
+}
