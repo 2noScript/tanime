@@ -29,8 +29,12 @@ function Slide(props) {
     >
       {_animeSlide.map((anime) => (
         <SwiperSlide className="ani__slide" key={anime.id}>
-          <Link to={`anime/${anime.id}`}>
-            <img src={anime.banner_image} alt="" className="slider-item-bg" />
+          <Link to={`anime/${anime.id}`} key={anime.id}>
+            {/* <img src={anime.banner_image} alt="" className="slider-item-bg" /> */}
+            <div
+              className="slider-item-bg"
+              style={{ backgroundImage: `url(${anime.banner_image}) ` }}
+            ></div>
             <h1 className="slider-item-name">{anime.titles.en}</h1>
           </Link>
         </SwiperSlide>

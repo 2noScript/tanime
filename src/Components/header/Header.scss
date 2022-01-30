@@ -6,22 +6,19 @@
   height: $header-h;
   width: $header-w;
   background-color: rgba(54, 28, 71, 0.9);
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
 }
 .index {
   color: aqua;
-  position: absolute;
-  left: 20%;
-  top: 15px;
+
   font-size: 30px;
+  padding: 12px;
 }
-.serach {
-  position: absolute;
-  left: 28%;
-  top: 50%;
-  transform: translateY(-50%);
-  outline: none;
-  height: 30px;
-  width: 300px;
-  border-radius: 5px;
-  padding-left: 8px;
+.page-number {
+  padding: 8px;
+}
+.page-number:hover {
+  color: white;
 }

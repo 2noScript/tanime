@@ -49,7 +49,11 @@ function Detail() {
             controls
           ></video>
         ) : (
-          <img className="detail__img" src={anime.data.banner_image} alt="" />
+          <div
+            className="detail__img"
+            style={{ backgroundImage: `url(${anime.data.banner_image}) ` }}
+          ></div>
+          // <img className="detail__img" src={anime.data.banner_image} alt="" />
         )}
 
         <h2
